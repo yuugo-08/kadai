@@ -1,0 +1,12 @@
+<home.html>
+character.htmlとsinsou.htmlに飛べるようにしました。
+ダウンロードのボタンを押すと公式のホームページに飛べるようにしました。
+Javaスクリプトを使い最初にhome.htmlに飛んだ時にだけGIFの画像が表示されるようにしました。
+
+<character.html>
+home.htmlとsinsou.htmlに飛べるようにしました。
+キャラクターの名前を押すとそのキャラクターの画像のところに飛べるようにしました。
+
+<sinsou.html>
+home.htmlとcharacter.htmlに飛べるようにしました。
+心相（紹介しているもの）の名前を押すとその心相の画像のところに飛べるようにしました。

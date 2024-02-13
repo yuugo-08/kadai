@@ -1,0 +1,245 @@
+/* リセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#home{
+  background-image: url(img/home2.jpg); /* 新しい背景画像の指定 */
+}
+
+/* ボディ */
+body {
+  font-family: 'Hannari', sans-serif;
+  color: #ffffff;
+  padding-top: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#fullscreen-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 9999; /* 画像が他の要素の上に表示されるように設定 */
+  display: none; /* 初期状態では非表示 */
+}
+
+/* ヘッダー */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  flex: 0 0 auto;
+}
+
+.logo-img {
+  width: 150px;
+}
+
+.header ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.header ul a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header ul a li {
+  margin-right: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* メインコンテンツ */
+ .h2 {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, -1px 1px 0 black, 1px -1px 0 black, 0px 1px 0 black, 0-1px 0 black, -1px 0 0 black, 1px 0 0 black;
+}
+
+.bana {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* メディアクエリ */
+@media only screen and (max-width: 768px) {
+  .header ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .header ul a li {
+      margin-bottom: 10px;
+  }
+}
+
+
+/* ダウンロードリンクのスタイル */
+.download {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f8e4a0; /* ボタンの背景色 */
+  color: #213945; /* ボタンの文字色 */
+  text-decoration: none; /* リンクの下線をなくす */
+  border-radius: 5px; /* ボタンの角を丸くする */
+  transition: background-color 0.3s ease; /* ホバー時のトランジション */
+  position: absolute; /* 絶対位置指定 */
+  top: -30px; /* 上方向に配置 */
+  left: 50%; /* 水平方向の中央揃え */
+  transform: translateX(-50%); /* 水平方向に中央揃え */
+}
+
+.download:hover {
+  background-color: #937315; /* ホバー時の背景色 */
+}
+
+#character{
+  background-image: url(img/yorugatya.jpg);
+}
+
+#wrap {
+  clear: both;
+  padding: 35px 10px;
+  padding-left: 100px;
+}
+
+.contents{
+  display: flex;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.contents section {
+  margin-bottom: 30px;
+  background-color: rgba(151, 202, 214, 0.92);
+  opacity: 0.7;
+}
+
+ul {
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  display: inline-block; /* リストをインラインブロック要素にする */
+  text-align: left;
+}
+.sidebar ul li a {
+  text-decoration: none; /* リンクから下線を削除する */
+  font-size: 25px;
+}
+
+.sidebar {
+  width: 300px; /* サイドバーの幅を調整 */
+  
+  margin-top: 10%;
+  
+}
+
+
+#character h1{
+  font-size: 50px;
+  color: black;
+}
+
+.kemono{
+  font-size: 40px;
+  color: red;
+  text-shadow: 
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+.hosi{
+  font-size: 40px;
+  color: rgb(86, 86, 221);
+  text-shadow: 
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+.ki{
+  font-size: 40px;
+  color: rgb(60, 172, 60);
+  text-shadow: 
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+.iwa{
+  font-size: 40px;
+  color: rgb(210, 147, 37);
+  text-shadow: 
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+.rei{
+  font-size: 40px;
+  color: rgb(154, 77, 161);
+  text-shadow: 
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+#sinsou{
+  background-image: url(img/haikei3.png);
+}
+
+li a{
+  color: rgb(7, 62, 110);
+}
+
+#side{
+  font-family: 'Montserrat'
+}
+
+.h3{
+ color: #000;
+ background-color: aliceblue;
+ width: 80%;
+}
+
+.main{
+  width: 70%;
+}
